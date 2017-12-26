@@ -1105,10 +1105,13 @@ class UserSettings {
 
   changeSettings(settings) {
     if (this.auth.verifyCredentials()) {
-      // ...
+      this.user.updateSettings(settings);
     }
   }
 }
+
+new UserSettings(user, new UserAuth(user))
+
 ```
 **[⬆ back to top](#table-of-contents)**
 
