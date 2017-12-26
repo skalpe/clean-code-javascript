@@ -1098,9 +1098,9 @@ class UserAuth {
 
 
 class UserSettings {
-  constructor(user) {
+  constructor(user, auth) {
     this.user = user;
-    this.auth = new UserAuth(user);
+    this.auth = auth;
   }
 
   changeSettings(settings) {
