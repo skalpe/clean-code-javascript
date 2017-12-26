@@ -1213,6 +1213,9 @@ classic Square-Rectangle example. Mathematically, a square is a rectangle, but
 if you model it using the "is-a" relationship via inheritance, you quickly
 get into trouble.
 
+Note: This is a kind of a valid example but i would dive deeper into the topic.
+Please read https://stackoverflow.com/questions/44442448/when-adhering-to-liskov-substitution-principle-lsp-can-a-child-class-implement best answer section.
+
 **Bad:**
 ```javascript
 class Rectangle {
@@ -1315,9 +1318,6 @@ renderLargeShapes(shapes);
 **[⬆ back to top](#table-of-contents)**
 
 ### Interface Segregation Principle (ISP)
-JavaScript doesn't have interfaces so this principle doesn't apply as strictly
-as others. However, it's important and relevant even with JavaScript's lack of
-type system.
 
 ISP states that "Clients should not be forced to depend upon interfaces that
 they do not use." Interfaces are implicit contracts in JavaScript because of
@@ -1328,6 +1328,8 @@ classes that require large settings objects. Not requiring clients to setup
 huge amounts of options is beneficial, because most of the time they won't need
 all of the settings. Making them optional helps prevent having a
 "fat interface".
+
+!IMPORTANT Yevhen's Note: !!!!!!! I don't that it's a good example. I'm still thinking about a better example. !!!!!
 
 **Bad:**
 ```javascript
@@ -1404,8 +1406,7 @@ It can accomplish this through DI. A huge benefit of this is that it reduces
 the coupling between modules. Coupling is a very bad development pattern because
 it makes your code hard to refactor.
 
-As stated previously, JavaScript doesn't have interfaces so the abstractions
-that are depended upon are implicit contracts. That is to say, the methods
+The abstractions are depended upon are implicit contracts. That is to say, the methods
 and properties that an object/class exposes to another object/class. In the
 example below, the implicit contract is that any Request module for an
 `InventoryTracker` will have a `requestItems` method.
