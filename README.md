@@ -1219,6 +1219,8 @@ get into trouble.
 Note: This is a kind of a valid example but i would dive deeper into the topic.
 Please read https://stackoverflow.com/questions/44442448/when-adhering-to-liskov-substitution-principle-lsp-can-a-child-class-implement best answer section.
 
+Note: Please also read this artical http://sergeyteplyakov.blogspot.com/2014/09/liskov-substitution-principle.html (RU) as more in-depth explanation. 
+
 Note: If you want to know more about type variance, you can read this https://flow.org/en/docs/lang/variance/ explanation with examples in Flow.
 
 **Bad:**
