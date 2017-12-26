@@ -1332,7 +1332,7 @@ huge amounts of options is beneficial, because most of the time they won't need
 all of the settings. Making them optional helps prevent having a
 "fat interface".
 
-!IMPORTANT Yevhen's Note: !!!!!!! I don't that it's a good example. I'm still thinking about a better example. !!!!!
+!IMPORTANT Yevhen's Note: !!!!!!! I don't think that it's a good example. I'm still thinking about a better example. !!!!!
 
 **Bad:**
 ```javascript
